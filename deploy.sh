@@ -1,7 +1,12 @@
 #!/bin/bash
 
 
-mkdir bashrc
+if [ -f "backup" ]
+then
+	mkdir backup
+fi
+
+
 
 # remplacement des liens
 if [ -f "~/.bashrc" ]
@@ -25,4 +30,9 @@ fi
 # PS1
 # LS_COLORS
 # alias
+
+
+
+
+source ~/.bashrc
 
